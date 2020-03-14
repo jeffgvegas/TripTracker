@@ -7,7 +7,7 @@ const NewTrip = props => {
   };
   const handleSubmit = event => {
     const params = { trip: { title: titleValue } };
-    fetch(`http://trips_api:3001/trips/${props.id}.json`, {
+    fetch(`http://localhost:3001/trips/${props.id}.json`, {
       method: "POST",
       body: JSON.stringify(params)
     }).then(res => res.json());
@@ -16,9 +16,30 @@ const NewTrip = props => {
   return (
     <div>
       <p>
+        <label>Title</label>
         <input type="text" value={titleValue} onChange={handleTitleChange} />
       </p>
-      <button onClick={handleSubmit}>Create</button>
+      <p>
+        <label>Location #1</label>
+        <input type="text" value={titleValue} onChange={handleTitleChange} />
+      </p>
+      <p>
+        <label>Location #2</label>
+        <input type="text" value={titleValue} onChange={handleTitleChange} />
+      </p>
+      <p>
+        <label>Location #3</label>
+        <input type="text" value={titleValue} onChange={handleTitleChange} />
+      </p>
+      <p>
+        <label>Latitude</label>
+        <input type="text" value={titleValue} onChange={handleTitleChange} />
+      </p>
+      <p>
+        <label>Longitude</label>
+        <input type="text" value={titleValue} onChange={handleTitleChange} />
+      </p>
+      <button onClick={handleSubmit}>Create Trip</button>
     </div>
   );
 };
