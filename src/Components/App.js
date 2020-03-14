@@ -1,15 +1,17 @@
 import React from 'react';
 import Nav from './Nav'
-import Board from './Board'
+import Cards from './Cards'
 import Show from './Show'
+import '../Assets/App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Board />
-      <Show />
+      <h1>TRIPTRACKER</h1>
+        <Nav />
+        <Cards />
+        <Show />
     </div>
   );
 }
