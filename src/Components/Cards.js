@@ -4,7 +4,7 @@ import TripCard from "./Card.js";
 
 const Cards = () => {
   return (
-    <div className="Cards">
+    <div className="Cards">git 
       <TripCard />
     </div>
   );
