@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { withGoogleMap, GoogleMap } from 'react-google-maps';
+import { withScriptjs, withGoogleMap, GoogleMap, InfoWindow, Marker } from "react-google-maps";
+import Geocode from "react-geocode";
 
 
 
@@ -10,7 +11,9 @@ class Map extends Component {
         defaultCenter = { { lat: 40.756795, lng: -73.954298 } }
         defaultZoom = { 8 }
       >
+        
       </GoogleMap>
+      
    ));
    return(
       <div>
