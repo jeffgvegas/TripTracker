@@ -6,12 +6,21 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+<<<<<<< HEAD
     "google-maps-react": "^2.0.2",
+=======
+    "bootstrap": "^4.4.1",
+>>>>>>> 5fd2dabf4ccf7f53fa552a11d32f14366f9cf625
     "react": "^16.13.0",
+    "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
+<<<<<<< HEAD
     "react-geocode": "^0.2.1",
     "react-google-autocomplete": "^1.1.2",
     "react-google-maps": "^9.4.5",
+=======
+    "react-router-dom": "^5.1.2",
+>>>>>>> 5fd2dabf4ccf7f53fa552a11d32f14366f9cf625
     "react-scripts": "3.4.0"
   },
   "scripts": {

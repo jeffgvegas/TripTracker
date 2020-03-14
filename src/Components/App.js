@@ -1,15 +1,14 @@
-import React from 'react';
-import Nav from './Nav'
-import Cards from './Cards'
-import Show from './Show'
-import '../Assets/App.css';
+import React from "react";
+import Nav from "./Nav";
+import TripCard from "./Card";
+import Show from "./Show";
 
 function App() {
   return (
     <div className="App">
       <h1>TRIPTRACKER</h1>
       <Nav />
-      <Cards />
+      <TripCard />
       <Show />
     </div>
   );
