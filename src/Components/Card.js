@@ -1,23 +1,25 @@
-import React from "react";
-import Cards from "./Cards";
+import React, { useState, useEffect } from "react";
+import { Card, ListGroupItem, ListGroup } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../Assets/Cards.css";
 
-const Card = props => {
+const TripCard = props => {
   return (
-    <div className="Card">
-      <h3>{props.title}</h3>
-      <a href="#" onClick={() => showTrip(trip)}>
-        Show
-      </a>
-      -
-      <a href="#" onClick={() => editTrip(trip)}>
-        Show
-      </a>
-      -
-      <a href="#" onClick={() => deleteTrip(trip)}>
-        Show
-      </a>
-    </div>
+    <Card style={{ width: "18rem" }}>
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+      </Card.Body>
+      <ListGroup className="list-group-flush">
+        <ListGroupItem>Start: {props.location}</ListGroupItem>
+        <ListGroupItem>End: {props.location}</ListGroupItem>
+      </ListGroup>
+      <Card.Body>
+        <Card.Link href="#">Edit</Card.Link>
+        <Card.Link href="#">Show</Card.Link>
+        <Card.Link href="#">Delete</Card.Link>
+      </Card.Body>
+    </Card>
   );
 };
 
-export default Card;
+export default TripCard;

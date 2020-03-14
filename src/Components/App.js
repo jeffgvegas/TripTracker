@@ -1,13 +1,13 @@
 import React from "react";
 import Nav from "./Nav";
-import Board from "./Cards";
+import TripCard from "./Card";
 import Show from "./Show";
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Board />
+      <TripCard />
       <Show />
     </div>
   );

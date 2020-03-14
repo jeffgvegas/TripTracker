@@ -1,0 +1,7 @@
+.Cards {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  margin-left: 250px;
+  float: left;
+}
