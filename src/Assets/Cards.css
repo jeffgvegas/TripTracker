@@ -1,12 +1,6 @@
 .Cards {
-  width: 500px;
-  height: 500px;
-  border: 2px solid black;
-  margin-left: 250px;
+  width: 700px;
+  margin-left: 50px;
   float: left;
-<<<<<<< HEAD
-  margin: 40px;
+  display: flex;
 }
-=======
-  }
->>>>>>> 723bfa278b71e28cbf9a09a4fdb1d02e59e3ad39

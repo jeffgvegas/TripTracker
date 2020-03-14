@@ -6,6 +6,8 @@ const Cards = () => {
   return (
     <div className="Cards">
       <TripCard />
+      <TripCard />
+      <TripCard />
     </div>
   );
 };
