@@ -1,12 +1,31 @@
-import React from 'react';
-import '../Assets/Cards.css'
+import React, { useState, useEffect } from "react";
+import Card from "./Card";
 
-function Cards() {
+const Cards = () => {
+  const [trips, setTrips] = useState([]);
+  const [displayTrip, setDisplayTrip] = useState(false);
+  const [currentTrip, setCurrentTrip] = useState({});
+  const [displayEditTrip, setDisplayEditTrip] = useState(false);
+
+  const showTrip = trip => {
+    setDisplayTrip(true);
+    setDisplayEditTrip(false);
+    setCurrentTrip(trip);
+  };
+
+  const editSong = trip => {
+    setDisplayEditTrip(true);
+    setDisplayTrip(false);
+    setCurrentTrip(trip);
+  };
+};
+
+const Board = () => {
   return (
-    <div className="Cards">
-      
+    <div className="Board">
+      <Cards />
     </div>
   );
-}
+};
 
-export default Cards;
+export default Board;
